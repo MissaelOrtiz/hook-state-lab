@@ -6,10 +6,11 @@ const SimpsonQuote = () => {
   const [loading, setLoading] = useState(false);
 
   const handleClick = async () => {
-    setLoading(false);
+    setLoading(true);
     const quote = await fetchQuote();
     console.log(quote);
     setQuote(quote);
+    setLoading(false);
   };
   
   return (
@@ -29,3 +30,5 @@ const SimpsonQuote = () => {
     </>
   );
 };
+
+export default SimpsonQuote;
