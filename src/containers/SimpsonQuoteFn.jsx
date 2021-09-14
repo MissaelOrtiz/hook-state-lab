@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Load from '../components/quote/Load';
+import Quote from '../components/quote/Quote';
 import { fetchQuote } from '../services/simpsonApi';
 
 const SimpsonQuote = () => {
