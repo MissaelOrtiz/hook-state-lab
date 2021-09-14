@@ -10,7 +10,6 @@ const SimpsonQuote = () => {
   const handleClick = async () => {
     setLoading(true);
     const quote = await fetchQuote();
-    console.log(quote);
     setQuote(quote);
     setLoading(false);
   };
